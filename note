@@ -1,0 +1,23 @@
+//        List<Integer> validMoves = getValidMoves(board);
+//        validMoves.sort(Comparator.comparingDouble((Integer move) ->
+//                -BoardEvaluator.evaluateMove(board, move))); // Tri pour meilleur élagage
+//
+//        for (int move : validMoves) {
+//            try {
+//                double[] moveArray = createMoveArray(move);
+//                Board simulatedBoard = board.playMoveSimulationBoard(board.getCurrentPlayer(), moveArray);
+//                bestMove[move] = minValue(simulatedBoard, 1, alpha, beta);
+//            } catch (InvalidBotException ignored) {}
+//        }
+
+
+//        if (depth == 10) { // Vérifie à une profondeur intermédiaire
+//            int myScore = board.getScore(board.getCurrentPlayer());
+//            int opponentScore = board.getScore(Board.otherPlayer(board.getCurrentPlayer()));
+//
+//            if (myScore < opponentScore && myScore > 0) {
+//                // Si l'écart est significatif mais qu'on a encore une chance de revenir
+//                // maxDepth = 12;
+//                //System.out.println("yes");
+//            }
+//        }
